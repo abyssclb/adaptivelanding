@@ -1,0 +1,456 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.header {
+  padding: 48px 60px;
+  position: relative;
+}
+.logo {
+  width: 68px;
+  height: 59px;
+  display: block;
+  margin: 0 auto 80px;
+  position: relative;
+  z-index: 999;
+}
+.logo:hover {
+  background: none;
+}
+.logo:hover svg * {
+  fill: #FFD500;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 80px;
+}
+.nav a {
+  margin: 0 40px;
+  color: #005BBB;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Montserrat';
+}
+.link:hover {
+  color: #FFD500;
+  }
+.btn-burger {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 60px;
+  border: 0;
+  background: none;
+}
+.dropdown {
+  display: none;
+}
+.btn-close {
+  position: absolute;
+  top: 48px;
+  right: 60px;
+  border: 0;
+  background: none;
+}
+.content__img {
+  padding: 60px;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(0, 91, 187, 0.2);
+}
+.form-burger{
+  max-width: 1024px;
+  height: 120px;
+  border: 1px solid white;
+  margin: 40px auto;
+  padding:30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;  
+}
+.textarea-burger{
+  width: 700px;
+  border: none;
+  outline: none;
+  max-width: 700px;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  background: #005BBB;
+}
+.send-burger{
+  background: white;
+  border: 2px solid white;
+  width: 199px;
+  height: 60px;
+  color: #005BBB;
+  padding: 13px 56px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+}
+.send-burger:hover {
+  background: #005BBB;
+  color: white;
+  border: 2px solid white;
+}
+.gallery img {
+  width: 400px;
+  margin: 0 auto;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-image: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%) 1 1;
+}
+.slick-dots{
+  display: flex;
+  justify-content: center;
+}
+.slick-dots button{
+  width:20px;
+  height:20px;
+  background: white;
+  border-radius:50%;
+  border: 1px solid #005BBB;
+  margin:40px 8px auto 8px;
+  cursor: pointer;
+  color: transparent;
+  }
+.slick-dots .slick-active button{
+  background: #005BBB;
+  border-radius:50%;
+  border: 0;
+  }
+.subtitle{
+  max-width: 1024px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  text-align:left;
+  color: #005BBB;
+  margin:80px auto;
+}
+.text {
+  margin: 40px auto;
+}
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #005BBB;
+  margin:16px auto;
+}
+.linebig{
+  max-width: 1024px;
+  border: none;
+  border-top: 1px solid #005BBB;
+  margin:0 auto 0 auto;
+}
+.linelittle{
+  width: 500px;
+  border: none;
+  border-top: 1px solid #005BBB;
+  margin:16px auto;
+}
+.history{
+ display:flex;
+ max-width: 1024px;
+ margin: 0 auto;
+ justify-content: space-between;
+}
+.container1, .container2 {
+  width: 497px;
+  height:394px;
+  background: #005BBB;
+  border-left: 10px solid #FFD500;
+  padding: 40px;
+  margin: 40px 30px 80px 0;
+  display: flex;
+  align-items: center;
+}
+.number{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.para{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.form{
+  max-width: 1024px;
+  height: 120px;
+  border: 1px solid #005BBB;
+  margin: 40px auto;
+  padding:30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;  
+}
+.textarea{
+  width: 700px;
+  border: none;
+  outline: none;
+  max-width: 700px;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #005BBB;
+}
+.send{
+  background: #005BBB;
+  border: 2px solid #005BBB;
+  width: 199px;
+  height: 60px;
+  color: white;
+  padding: 13px 56px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+}
+.send:hover {
+  background: white;
+  color: #005BBB;
+}
+/* tablet */
+
+@media only screen
+and (max-width: 1023px) {
+  .logo {
+    margin: 0;
+  }
+  .btn-burger {
+    display: block;
+  }
+  .header-navigation {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #005BBB;
+    padding: 228px 60px 148px;
+    color: #fff;            
+  }
+  .menu-open .header-navigation,
+  .menu-open .header-navigation .dropdown {
+    display: block;
+  }
+  .menu-open .logo svg * {
+    fill: #fff;
+  }
+  .menu-open .nav a {
+    color: #fff;
+  }
+  .subtitle{
+    width: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0 60px; 
+  }
+  .linebig{
+    width: 100%;
+    margin: 0 60px;
+  }
+  .linelittle{
+    width: 450px;
+  }
+  .title{
+  font-size: 30px;
+  line-height: 37px;
+  }
+  .history {
+    width: 100%;
+    display: block;
+  }
+  .container1, .container2{
+    width: 100%;
+    height:215px;
+    margin: 40px 40px 30px 60px;
+  }
+  .form{
+    width: 905px;
+  }
+}
+
+/* mobile */
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 850px) {
+  .header {
+    padding: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-open .logo {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .btn-burger,
+  .btn-close {
+    top: 20px;
+    right: 20px;
+  }
+  .header-navigation {
+    padding: 120px 20px 60px;
+  }
+  .nav {
+    display: block;
+  }
+  .nav a {
+    display: block;
+    margin: 0 0 48px;
+  }
+  .content__text {
+    margin: 20px;
+  }
+  .form{
+    height: 150px;
+    position: relative;
+    margin: 25px 20px 120px 20px;
+  }
+  .textarea{
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .send{
+    width: 100%;
+    padding: 20px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    bottom: -80px;
+}
+  .subtitle{
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 50px 20px;
+  }
+  .text {
+    margin: 5px auto;
+  }
+  .linebig,.linelittle {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .title{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .history {
+    width: 100%;
+    display: block;
+  }
+  .container1 {
+    width: 100%;
+    height:310px;
+    margin: 25px 20px;
+  }
+  .container2 {
+    width: 100%;
+    height:420px;
+    margin: 25px 20px;
+  }
+  .number{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .para{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin: 25px 20px 120px 20px;
+  }
+  .textarea{
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .send{
+    width: 100%;
+    padding: 20px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    bottom: -80px;
+}
